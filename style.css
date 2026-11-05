@@ -132,10 +132,23 @@ th{
     padding: 10px 14px;
     text-decoration: none;
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .link:hover{
     background-color: #104777;
-    padding: 10px 10px;
+    padding: 5px 5px;
+}
+
+.menu-horizontal .submenu{
+    display: none;
+}
+
+.menu-horizontal li:hover .submenu{
+    display:block;
+}
+
+.menu-horizontal a{
+    display: block;
+    margin-top: 5px;
 }
