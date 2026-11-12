@@ -7,6 +7,7 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f7f6f0;
+    height: 1500px;
 }
 
 .cabecalho{
@@ -52,7 +53,7 @@ body{
 
 
 .section{
-    background-color: #e4ebf5;
+    background-color: #cfd6c4;
     padding: 10px;
     border-radius: 8px;
     width: 205px;
@@ -69,6 +70,7 @@ body{
     height: 300px;
     max-width: 100%;
     object-fit: cover;
+    border-radius: 10px;
     
 }
 
@@ -88,52 +90,67 @@ body{
 
 .explorar{
     flex: 1;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
 
 .descricao{
     padding: 20px;
-    margin-bottom: 10px;
-    background-color: #a4b28d;
-    border: 1px solid #dce4ee;
+    background-color: #cfd6c4;
+    border: 1px solid #5c6c5c;
     border-radius: 8px;
-    max-width: 1000px;
-    margin: auto;
-    color: #f7f6f0;
-    margin-top: 30px;
+    max-width: 1150px;
+    margin: 20px auto;
+    color: black;
+    border-left: 8px solid #5c6c5c;
+    width: 100%;
+}
+
+.descricao p{
+    max-width: 900px;
+    text-align: justify;
 }
 
 .descricao img{
     width: 400px;
+    border-radius: 10px;
+}
+
+.descricao h2{
+    margin: 20px;
+    color: #5c6c5c;
 }
 
 .filmes{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px;
     gap: 14px;
-    justify-content: center;
-    flex-wrap: wrap;
     margin: 0 auto;
+    max-width: 900px;
 }
 
 .item-filme{
     display: flex;
+    flex-direction: column;
     background-color: #a4b28d;
     align-items: center;
     /*faz o paragráfo ficar embaixo da img obrigatoriament*/
     flex-direction: column;
     padding: 10px;
     border-radius: 8px;
-    max-width: 300px;
-    margin-bottom: 10px;
-    width: 100%;
+    text-align: center;
+    
 }
 
 .item-filme img{
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 8px;
     object-fit: cover;
-    height: 480px;
+    height: 350px;
+    border-radius: 8px;
     
 }
 
@@ -142,8 +159,56 @@ body{
     margin-top: 10px;
 }
 
-.titulos{
-    max-width: 1650px;
-    margin: 10px auto;
-    padding: 10px;
+
+.pagina{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 24px auto;
+}
+
+.menu-lateral{
+    width: 205px;
+    background-color: #a4b28d;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.menu-lateral ul{
+    text-decoration: none;
+    margin: 10px;
+    padding: 0;
+}
+
+.menu-lateral h2{
+    margin-bottom: 8px;
+    text-align: center;
+    color: #f7f6f0;
+}
+
+.menu-lateral a{
+    padding: 12px 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    display: block;
+    background-color: #f7f6f0;
+    color: #6b7f6b;
+    border-radius: 8px;
+}
+
+.menu-lateral a:hover{
+    background-color: #dce4ee;
+    padding: 15px 20px;
+    box-shadow: 3px 3px 3px #6b7f6b;
+}
+
+.conteudo-listas{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 24px auto;
+    padding: 0 16px;
+    max-width: 1300px;
+
 }
