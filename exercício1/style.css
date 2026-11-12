@@ -1,7 +1,7 @@
-/* 
+
 html{
     scroll-behavior: smooth;
-} */
+}
 
 body{
     margin: 0;
@@ -42,17 +42,108 @@ body{
     padding: 15px 15px;
 }
 
-.pagina{
+.conteudo{
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 20px;
     max-width: 1300px;
     margin: 24px auto;
 }
 
-.opcoes{
+
+.section{
     background-color: #e4ebf5;
-    padding: 14px;
+    padding: 10px;
     border-radius: 8px;
     width: 205px;
+    margin-bottom: 30px;
+
+}
+
+.section:hover{ 
+    box-shadow: 3px 3px 3px #6b7f6b;
+}
+
+.section img{
+    width: 350px;
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+.section a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.sobre-mim{
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.explorar{
+    flex: 1;
+}
+
+.descricao{
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #a4b28d;
+    border: 1px solid #dce4ee;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: auto;
+    color: #f7f6f0;
+    margin-top: 30px;
+}
+
+.descricao img{
+    width: 400px;
+}
+
+.filmes{
+    display: flex;
+    padding: 10px;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.item-filme{
+    display: flex;
+    background-color: #a4b28d;
+    align-items: center;
+    /*faz o paragráfo ficar embaixo da img obrigatoriament*/
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.item-filme img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 480px;
+    
+}
+
+.item-filme p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.titulos{
+    max-width: 1650px;
+    margin: 10px auto;
+    padding: 10px;
 }
